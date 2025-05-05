@@ -92,24 +92,20 @@
     
     
     <xsl:template match="//persName">
-    <a>
-        <xsl:attribute name="class">pop-annotation</xsl:attribute>
+    <a><xsl:attribute name="class">pop-annotation</xsl:attribute>
         <xsl:attribute name="tabindex">0</xsl:attribute>
         <xsl:attribute name="id"><xsl:value-of select="@key"/></xsl:attribute>
-        <xsl:apply-templates/>
-        </a>
+        <xsl:apply-templates/></a>
     </xsl:template>  
 
     
 
       
     <xsl:template match="//note">
-    <a>
-        <xsl:attribute name="class">pop-annotation</xsl:attribute>
+    <a><xsl:attribute name="class">pop-annotation</xsl:attribute>
         <xsl:attribute name="tabindex">0</xsl:attribute>
         <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
-        <xsl:apply-templates/>
-        </a>
+        <xsl:apply-templates/></a>
     </xsl:template>   
     
     <xsl:template match="//corr">
@@ -143,9 +139,9 @@
     </xsl:template>
 
         <xsl:template match="//pb">
-        <p class="folio"> 
-            Folio: <xsl:value-of select="@n"/>
-        </p>
+        <span class="folio"> 
+            (Folio: <xsl:value-of select="@n"/>)
+        </span>
     </xsl:template>
 
     <xsl:template match="//del">
@@ -159,5 +155,18 @@
          <xsl:apply-templates/>
         </span>
     </xsl:template>
+
+    <xsl:template match="//bibl">
+        <span class="bibl"> 
+         <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+        <xsl:template match="//foreign">
+        <span class="foreign"> 
+         <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
 
 </xsl:stylesheet>
