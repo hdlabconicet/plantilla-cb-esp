@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
  <?xml-model
-  href="esquema_plantilla-cb-esp.rng"
+  href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng"
   schematypens="http://relaxng.org/ns/structure/1.0"
   type="application/xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -9,7 +9,7 @@
             <titleStmt>
                 <title xml:id="llc_exordio">Fragmento de El lazarillo de ciegos caminantes - Exordio</title>
                 <author>Alonso Carrió de la Vandera</author>
-                <editor>Gabriel Calarco</editor>  
+                <editor resp="digital">Gabriel Calarco</editor>  
              </titleStmt>
             <publicationStmt>
                 <publisher>Nombre de la asignatura</publisher>
