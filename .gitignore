@@ -18,7 +18,7 @@ Gemfile.lock
 .github/workflows/jekyll.yml
 
 # Ignorar settings.json 
-.vscode\settings.json
+.vscode/settings.json
 
 # Ignore objects directory to avoid committing binary files (other than demo files)
 # if you would like to commit your objects to github, delete the line below!
