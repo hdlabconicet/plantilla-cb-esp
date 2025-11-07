@@ -1,7 +1,7 @@
 color_class,color
-primary, #F5C527
+primary, 
 secondary,
-success,
+success,"#0f5bbe"
 info,
 warning,
 danger,
